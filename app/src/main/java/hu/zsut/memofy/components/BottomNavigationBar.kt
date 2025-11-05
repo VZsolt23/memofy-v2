@@ -5,30 +5,30 @@ import androidx.compose.material.icons.filled.Face
 import androidx.compose.material.icons.filled.Home
 import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material3.Icon
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.NavigationBar
 import androidx.compose.material3.NavigationBarItem
 import androidx.compose.material3.NavigationBarItemDefaults
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.graphics.Color
-import hu.zsut.memofy.ui.theme.MemofyGreen
+import hu.zsut.memofy.ui.theme.MemofyCustomText
 
 @Composable
 fun BottomNavigationBar(
     currentScreen: String,
     onNavigate: (String) -> Unit
 ) {
-    NavigationBar(containerColor = MemofyGreen) {
+    NavigationBar(containerColor = MaterialTheme.colorScheme.primary) {
         NavigationBarItem(
             selected = currentScreen == "home",
             onClick = { onNavigate("home") },
             icon = { Icon(Icons.Default.Home, contentDescription = "Főoldal") },
             label = { Text("Főoldal") },
             colors = NavigationBarItemDefaults.colors(
-                selectedIconColor = Color(0xFFFFF9C4),
-                selectedTextColor = Color(0xFFFFF9C4),
-                unselectedIconColor = Color(0xFFFFF9C4).copy(alpha = 0.6f),
-                unselectedTextColor = Color(0xFFFFF9C4).copy(alpha = 0.6f)
+                selectedIconColor = MemofyCustomText,
+                selectedTextColor = MemofyCustomText,
+                unselectedIconColor = MemofyCustomText.copy(alpha = 0.6f),
+                unselectedTextColor = MemofyCustomText.copy(alpha = 0.6f)
             )
         )
         NavigationBarItem(
