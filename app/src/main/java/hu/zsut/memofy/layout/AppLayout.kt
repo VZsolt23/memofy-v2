@@ -11,7 +11,6 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import hu.zsut.memofy.components.BottomNavigationBar
 import hu.zsut.memofy.components.Header
@@ -32,7 +31,6 @@ fun MainLayout(
             modifier = Modifier
                 .padding(innerPadding)
                 .fillMaxSize()
-//                .background(Color(0xFF009688))
         ) {
             Column {
                 Header()
@@ -42,7 +40,7 @@ fun MainLayout(
                     modifier = Modifier
                         .fillMaxSize()
                         .clip(RoundedCornerShape(topStart = 40.dp, topEnd = 40.dp))
-                        .background(Color.White)
+                        .background(MaterialTheme.colorScheme.background)
                         .padding(16.dp)
                 ) {
                     content()

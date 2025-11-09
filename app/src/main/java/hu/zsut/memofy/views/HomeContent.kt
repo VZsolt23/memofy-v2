@@ -1,4 +1,4 @@
-package hu.zsut.memofy.screens
+package hu.zsut.memofy.views
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -18,21 +18,21 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import hu.zsut.memofy.data.ThemePreference
-import hu.zsut.memofy.ui.theme.MemofyBlue
-import hu.zsut.memofy.ui.theme.MemofyGreen
-import hu.zsut.memofy.ui.theme.MemofyPurple
-import hu.zsut.memofy.ui.theme.MemofyRed
-import hu.zsut.memofy.ui.theme.MemofyYellow
+import hu.zsut.memofy.ui.theme.MemofyBlueLight
+import hu.zsut.memofy.ui.theme.MemofyGreenLight
+import hu.zsut.memofy.ui.theme.MemofyPurpleLight
+import hu.zsut.memofy.ui.theme.MemofyRedLight
+import hu.zsut.memofy.ui.theme.MemofyYellowLight
 import kotlinx.coroutines.launch
 import java.util.Locale
 
-fun themeToColor(theme: String): Color {
+private fun themeToColor(theme: String): Color {
     return when (theme.lowercase(Locale.ROOT)) {
-        "green" -> MemofyGreen
-        "yellow" -> MemofyYellow
-        "blue" -> MemofyBlue
-        "red" -> MemofyRed
-        "purple" -> MemofyPurple
+        "green" -> MemofyGreenLight
+        "yellow" -> MemofyYellowLight
+        "blue" -> MemofyBlueLight
+        "red" -> MemofyRedLight
+        "purple" -> MemofyPurpleLight
         else -> Color.Gray
     }
 }

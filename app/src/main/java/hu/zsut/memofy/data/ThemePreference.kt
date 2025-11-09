@@ -10,7 +10,7 @@ import kotlinx.coroutines.flow.map
 private val Context.dataStore by preferencesDataStore(name = "settings")
 
 object ThemePreference {
-    private val THEME_KEY = stringPreferencesKey("user_theme")
+    private val THEME_KEY = stringPreferencesKey("memofy_user_theme")
 
     fun getUserTheme(context: Context): Flow<String> =
         context.dataStore.data.map { prefs ->
