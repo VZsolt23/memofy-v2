@@ -2,7 +2,7 @@
 <resources>
 
     <style name="Theme.Memofy" parent="android:Theme.Material.Light.NoActionBar" >
-        <item name="android:navigationBarColor">#FF009688</item>
-        <item name="android:statusBarColor">#FF009688</item>
+        <item name="android:navigationBarColor">#24ACA2</item>
+        <item name="android:statusBarColor">#24ACA2</item>
     </style>
 </resources>
