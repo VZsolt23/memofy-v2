@@ -1,4 +1,4 @@
-package hu.zsut.memofy.views
+package hu.zsut.memofy.ui.home
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -38,7 +38,7 @@ private fun themeToColor(theme: String): Color {
 }
 
 @Composable
-fun HomeContent() {
+fun HomeView() {
     val context = LocalContext.current
     val scope = rememberCoroutineScope()
     val themes = listOf("green", "yellow", "blue", "red", "purple")

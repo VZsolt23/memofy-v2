@@ -1,4 +1,4 @@
-package hu.zsut.memofy.layout
+package hu.zsut.memofy.ui.layout
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
@@ -12,8 +12,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.unit.dp
-import hu.zsut.memofy.components.BottomNavigationBar
-import hu.zsut.memofy.components.Header
+import hu.zsut.memofy.ui.common.BottomNavigationBar
+import hu.zsut.memofy.ui.common.Header
 
 @Composable
 fun MainLayout(

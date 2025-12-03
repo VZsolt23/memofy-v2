@@ -14,7 +14,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
 import hu.zsut.memofy.data.ThemePreference
-import hu.zsut.memofy.screens.MainScreen
+import hu.zsut.memofy.ui.MainScreen
 import hu.zsut.memofy.ui.theme.MemofyCustomTextForGreenLight
 import hu.zsut.memofy.ui.theme.MemofyGreenLight
 import hu.zsut.memofy.ui.theme.MemofyTheme

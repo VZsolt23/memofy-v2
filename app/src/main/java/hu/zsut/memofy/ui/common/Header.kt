@@ -1,4 +1,4 @@
-package hu.zsut.memofy.components
+package hu.zsut.memofy.ui.common
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box

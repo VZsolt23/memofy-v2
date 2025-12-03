@@ -1,4 +1,4 @@
-package hu.zsut.memofy.screens
+package hu.zsut.memofy.ui
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -6,8 +6,10 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.tooling.preview.Preview
-import hu.zsut.memofy.layout.MainLayout
-import hu.zsut.memofy.views.HomeContent
+import hu.zsut.memofy.ui.layout.MainLayout
+import hu.zsut.memofy.ui.persons.add.AddPersonScreen
+import hu.zsut.memofy.ui.home.HomeView
+import hu.zsut.memofy.ui.persons.list.PersonListScreen
 
 @Preview
 @Composable
@@ -18,8 +20,9 @@ fun MainScreen() {
         currentScreen = screen
     }) {
         when (currentScreen) {
-            "home" -> HomeContent()
-//            "people" -> PeopleContent()
+            "home" -> HomeView()
+            "people" -> PersonListScreen()
+            "settings" -> AddPersonScreen()
 //            "settings" -> SettingsContent()
         }
     }
